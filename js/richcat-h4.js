@@ -1,15 +1,12 @@
 
 $(document).ready(function() {
 
-    let counterPeople = 60;
-
+    let counter = 60;
     for (let i = 0; i <= 60 ; i++) {
         setTimeout(function () {
-            $('.time-count').text(counterPeople--);
+            $('.time-count').text(counter--);
         },1000 * i);
     }
-
-
 
     $('.try_again').click(function(){
         setTimeout(function(){
@@ -17,19 +14,20 @@ $(document).ready(function() {
         }, 200);
     });
 
-
-
     $('.again_btn').click(function(){
         $(".again-wrap").addClass("d-none");
     });
 
-
-
     $('.show_form').click(function(){
         runConfetti();
         setTimeout(function(){
-            alert("show_form!!!");
-        }, 2000);
+            $(".form-wrap").addClass("add-d-flex");
+            $(".form-wrap").css("opacity", "1");
+        }, 1000);
+
+        setTimeout(function () {
+            $(".form-main-box").addClass('modal-open');
+        },1400);
     })
 
 });
