@@ -13,8 +13,8 @@ $(document).ready(function() {
 
     $('.try_again').click(function(){
         setTimeout(function(){
-            $( ".again-wrap" ).removeClass( "d-none" )
-        }, 500);
+            $( ".again-wrap" ).removeClass( "d-none" );
+        }, 200);
     });
 
 
@@ -26,10 +26,10 @@ $(document).ready(function() {
 
 
     $('.show_form').click(function(){
+        runConfetti();
         setTimeout(function(){
-            runConfetti();
             alert("show_form!!!");
-        }, 500);
+        }, 2000);
     })
 
 });

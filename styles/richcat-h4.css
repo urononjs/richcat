@@ -10,6 +10,17 @@ html, * {
 }
 
 
+.wrap{
+    background: url("../images/main-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    min-height: 67vh;
+}
+
+
+
 /*MAIN*/
 .main{
     position: relative;
@@ -19,26 +30,10 @@ html, * {
     flex-direction: column;
     justify-content: space-between;
 }
-
-/*.main-top-img{*/
-/*    position: relative;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    z-index: -1;*/
-/*    transform: translateY(-54px);*/
-/*}*/
 /*END-MAIN*/
 
 
 /*HEADER*/
-.header{
-    /*position: relative;*/
-    /*z-index: 3;*/
-    /*top: 0;*/
-
-    background: #8e76d3;
-}
-
 .header .container{
     display: flex;
     align-items: end;
@@ -95,23 +90,14 @@ html, * {
 
 
 /*WRAP-TITLE*/
-/*.wrap-title{*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 100px;*/
-/*}*/
-
-.wrap-title{
-    background: #423461;
-}
-
-
 .title-text{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     color: #FFFFFF;
+
+    padding-top: 50px;
 }
 
 .uan{
@@ -126,7 +112,6 @@ html, * {
 
 
 /*TIME*/
-
 .time-wrap .container{
     display: flex;
     justify-content: flex-end !important;
@@ -151,7 +136,6 @@ html, * {
     line-height: 29px;
     color: #423461;
 }
-
 /*END-TIME*/
 
 
@@ -164,11 +148,6 @@ html, * {
     font-weight: 600;
     font-size: 36px;
     color: #423461;
-    /*padding-bottom: 30px;*/
-
-    /*margin-top: -63px;*/
-
-    margin-top: 30px;
 }
 
 .cats-wrap .container{
@@ -217,13 +196,6 @@ html, * {
     transition: 0.5s;
 }
 
-/*.number-2{*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*}*/
-
 .footer{
     margin-top: 60px;
     margin-bottom: 15px;
@@ -260,8 +232,6 @@ html, * {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .again-box{
@@ -274,6 +244,9 @@ html, * {
     align-items: center;
 
     padding: 11px 15px 12px 24px;
+
+    -webkit-transition: 2s;
+    transition: 2s;
 }
 
 
@@ -294,7 +267,7 @@ html, * {
 
     background: #7860B1;
     border-radius: 30px;
-    padding: 10px 40px;
+    padding: 12px 40px;
 
     cursor: pointer;
     margin-top: 20px;
@@ -303,7 +276,6 @@ html, * {
 .again_btn:hover{
     background: #8e76d3;
 }
-
 /*END-AGAIN*/
 
 
@@ -311,30 +283,9 @@ html, * {
     display: none;
 }
 
-
-/*.add-d-none{*/
-/*    display: none;*/
-/*    transition: 0.5s;*/
-/*}*/
-
 .add-opacity-1{
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -363,7 +314,17 @@ html, * {
     .cats-wrap-text {
         font-size: 26px;
     }
+
+    .wrap {
+        background: url(../images/main-bg-mob.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        min-height: 67vh;
+    }
 }
+
 
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -390,6 +351,24 @@ html, * {
         padding-top: 7px;
     }
 
+    .wrap{
+        background: url("../images/main-bg-mob.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        min-height: 53vh;
+    }
+    .title-text {
+        padding-top: 2px;
+    }
+
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
     .again-box {
         display: flex;
         align-items: center;
@@ -397,13 +376,19 @@ html, * {
         flex-wrap: wrap;
         text-align: center;
     }
+    .again-text {
+        font-size: 26px;
+    }
 
+    .again-cat-img{
+        width: 123px;
+        transform: translateY(-60px);
+    }
 
-}
-
-
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+    .again_btn{
+        transform: translateY(135px);
+        font-size: 16px;
+    }
 
 }
 
@@ -427,25 +412,121 @@ html, * {
         font-size: 18px;
     }
 
-
     .footer-link-red {
         font-size: 10px;
+    }
+
+    .again-text {
+        font-size: 22px;
+    }
+
+    .logo{
+        width: 82px;
+    }
+
+    .wrap-number a {
+        font-size: 16px;
+    }
+
+    .wrap-number img {
+        padding-right: 8px;
+        width: 30px;
+    }
+
+
+    .wrap{
+        background: url("../images/main-bg-mob.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        min-height: 53vh;
+    }
+
+    .title-text {
+        padding-top: 25px;
+    }
+
+    .footer {
+        margin-top: 15px;
+    }
+
+    .wrap-cat-1, .wrap-cat-2, .wrap-cat-3, .wrap-cat-4 {
+        height: 115px;
     }
 }
 
 /*Extra small devices (portrait phones, less than 450px)*/
 @media (max-width: 450px) {
+    .again-text {
+        font-size: 20px;
+    }
+
+    .wrap-cat-1, .wrap-cat-2, .wrap-cat-3, .wrap-cat-4 {
+        height: 105px;
+    }
+
+    .wrap {
+        min-height: 50vh;
+    }
 
 }
 
 /*Extra small devices (portrait phones, less than 400px)*/
 @media (max-width: 400px) {
+    .wrap-cat-1, .wrap-cat-2, .wrap-cat-3, .wrap-cat-4 {
+        height: 92px;
+    }
 
+    .title-text {
+        font-size: 20px;
+    }
+    .uan {
+        font-size: 20px;
+    }
+    .footer-link-red {
+        font-size: 8px;
+    }
 }
 
 /*Extra small devices (portrait phones, less than 550px)*/
 @media (max-width: 350px) {
+    .again-text {
+        font-size: 18px;
+    }
 
+    .wrap-number a {
+        font-size: 14px;
+    }
+    .tel-text-mob {
+        font-size: 10px;
+    }
+
+    .title-text {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    .uan {
+        font-size: 18px;
+    }
+    .cats-wrap-text {
+        font-size: 16px;
+    }
+    .time {
+        font-size: 10px;
+        padding-bottom: 8px;
+    }
+    .time-count {
+        font-size: 16px;
+    }
+
+    .footer-link-red {
+        font-size: 7px;
+    }
+
+    .wrap-cat-1, .wrap-cat-2, .wrap-cat-3, .wrap-cat-4 {
+        height: 84px;
+    }
 }
 /*END-STYLES FOR MAX-WIDTH*/
 
@@ -496,3 +577,43 @@ html, * {
 
 }
 /*END-STYLE-FOR-CONTAINER*/
+
+
+
+
+/*MEDIA-LANDSCAPE*/
+@media (max-height: 450px) and (orientation:landscape) {
+    .wrap{
+        background: url("../images/main-bg.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        min-height: 67vh;
+    }
+
+    .logo{
+        width: 82px;
+    }
+
+    .wrap-number a {
+        font-size: 16px;
+    }
+
+    .wrap-number img {
+        padding-right: 8px;
+        width: 30px;
+    }
+
+    .title-text {
+        font-size: 18px;
+    }
+    .uan {
+        font-size: 18px;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+}
+/*END-MEDIA-LANDSCAPE*/
